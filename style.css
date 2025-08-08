@@ -34,6 +34,7 @@ h1{
 .formulario input[type="number"] {
     width: 200px;
     padding: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #cccccc;
     font-size: 1.1em;
@@ -46,3 +47,26 @@ h1{
     border: none;
     border-radius
 }
+
+
+
+
+
+
+
+
+paragrafosResultado p {
+    font-size: 1.2em;
+    text-align:center;
+    margin:10px 0;
+}
+
+.ultimoResultado {
+    color:whitte;
+    padding: 3px;
+    border-radus: 5px;
+    font-size:1.3em;
+    text-align: center;
+}
+
+.ultimoResultado
