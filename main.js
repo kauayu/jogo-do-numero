@@ -1,8 +1,14 @@
 let numeroAleatorio = Math.floor(Math.random() *100) +1;
 const palpites = document.querySelector('.palpites');
-const ultimoResultado = document.querySelector('.ultimoResultado')
-const baixoOuAlto = document.querySelector
+const ultimoResultado = document.querySelector('.ultimoResultado');
+const baixoOuAlto = document.querySelector('baixoOuAto');
+const envioPalpite = document.queryselector('.envioPalpite');
+const campoPalpite = document.queryselector('.campoPalpite');
+let contagemPalpites = 1;
+let botaoReiniciar;
 
+function verificarPalpite() {
+  const palpiteUsuario = Number(campoPalpite.value);
 
 
 
