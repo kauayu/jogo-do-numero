@@ -9,6 +9,25 @@ let botaoReiniciar;
 
 function verificarPalpite() {
   const palpiteUsuario = Number(campoPalpite.value);
+  if (contagemPalpites ===1) {
+    palpites.textContent = "Palpites anteriores:";
+  }
+
+  palpites.textContent += PaliteUsuario + " ";
+
+  if (palpiteUsuario === numeroAleatorio) {
+    ultimoResultado.textContent = "parabéns! você Acertou!";
+    ultimoResultado.style.backgroundColor = "green";
+    baixoOuAlto.textcontent = "";
+    finalizarjogo();
+  } else if (contagemPalpites === 10) {
+    ultimoResultado.textcontent = "FIM DE JOGO!!";
+    baixoOuAlto.textcontent = "";
+    finalizarjog();
+  } else {
+    ultimoResultado.textContent = 
+    
+    
 
 
 
