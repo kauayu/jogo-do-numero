@@ -25,7 +25,28 @@ function verificarPalpite() {
     baixoOuAlto.textcontent = "";
     finalizarjog();
   } else {
-    ultimoResultado.textContent = 
+    ultimoResultado.textContent = "Errado";
+    ultimoResultado.style.backgroudColor = "red";
+    if (palpiteUsuario < numeroAleatorio) {
+      baixoOuAlto.textContent = "o ultimo palpite foi muito baixo";
+    } else if (palpiteUsuario > numeroAleatorio) {
+      baixoOuAlto.textContent = "o ultimo palpite foi muito alto";
+    }
+  }
+
+  contagemPalpites++;
+  campoPalpite.value = "";
+  campoPalpite.focus();
+}
+
+envioPalpite.addEventListener('click', verificarPalpite);
+
+function finalizarJogo() {
+  campoPalpite.disabled = true;
+  envioPalpite.disabled = true;
+  botaoReiniciar = document.createElement('buttonn');
+  document.body.app
+                              
     
     
 
