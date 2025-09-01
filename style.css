@@ -57,12 +57,12 @@ h1 {
 
 .paragrafosResultado p {
     font-size: 1.2em;
-    text-decoration: center;
+    text-align:center;
     margin: 10px 0;
 }
 
 .ultimoResultado {
-    color:white;
+    color: white;
     padding: 3px;
     border-radius: 5px;
     font-size: 1.3em;
@@ -87,7 +87,7 @@ h1 {
     border-radius: 5px;
     font-size: 1.2em;
     cursor: pointer;
-    transition: border-color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .botaoReiniciar.hover {
