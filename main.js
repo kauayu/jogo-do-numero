@@ -45,34 +45,25 @@ function finalizarJogo() {
   campoPalpite.disabled = true;
   envioPalpite.disabled = true;
   botaoReiniciar = document.createElement('buttonn');
-  document.body.app
+  document.body.appendChild(botaoReiniciar);
+  botaoReiniciar.textContent = 'Reiniciar jogo';
+  botaoReinicuar.Claslist.add('botaoReiniciar');
+  botaoReiniciar.addEventListener('click', reiniciarJogo);
+}
+
+function reiniciarJogo() {
+  contagemPalpites = 1;
+  const paragrafosReiniciar = document. querySelectorAll('.paragrafosResultados p');
+  for (const paragrafosReiniciar of paragrafosReiniciar) {
+    paragrafosReiniciar.textContent = "";
+}
+
+  botaoReiniciar.parentNode.removeChild(botaoReiniciar);
+  campoPalpite.disabled = false;
+  envioPalpite.disabled = false;
+  campoPalpite.value = "";
+  campoPalpite.focus();
+  ultimoResultado.style.backgroudColor = 'white';
+  numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+}
                               
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-} else if (contagmePalpites ===10) {
-  ultimoResultado.textContent = ...
-
-
-
-    ultimoResultado.textContent = "Errado";
-  ultimoResultado.style.backgroudolor = "red";
-  if (palpiteUsuario < numeroAleatorio) {
-    baixoOuAlto.textContent = "O ultimo palpite foi muito baixo";
-  }
